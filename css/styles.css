@@ -2,6 +2,7 @@
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 ul, h1, h2, h3, p, img {
@@ -83,16 +84,19 @@ body {
 
 .hero__text {
   margin-bottom: 126px;
+  color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
 }
-
-.hero__button {
-  padding: 26px 37px;
+.button {
   background-color: #FF9900;
   font-size: 24px;
   font-weight: 700;
   color: #FFFFFF;
+}
+.hero__button {
+  padding: 26px 37px;
+
 }
 
 /* about us */
@@ -113,27 +117,59 @@ body {
 }
 .article {
   display: block;
+  width: 50%;
   padding-top: 446px;
   background-image: url('../img/Rectangle2.jpg');
   background-repeat: no-repeat;
 }
 .aricle__innerwrap{
   display: flex;
-  padding: 44px 54px 44px 54px;
+
+  padding: 44px 69px 44px 54px;
   background-image: url('../img/Rectangle5.png');
   background-repeat: no-repeat;
 }
 .article__text {
+  margin-right: 82px;
+  max-width: 494px;
+  line-height: 31px;
+  font-weight: 700;
+  color: #FFFFFF;
 }
 .atricle__button {
+  /* display: inline-block; */
+  align-self: center;
+  padding: 19px 36px;
+  border: 2px solid #FF9900;
+  color: #FFFFFF;
+  font-weight: 700;
+
 }
 .cards__list {
+  width: 49%;
 }
 .cards__items {
+  padding: 77px 109px 56px 298px;
+  border: 1px solid #CACACA;
+
 }
 .cards__title {
+  margin-bottom: 7px;
+  font-size: 24px;
+  font-weight: 700;
+
 }
 .cards__text {
+  line-height: 32px;
 }
-.cards-items {
+
+.cards__items:first-child {
+  background: url('../img/icons/package.svg') no-repeat 17% 46%, url('../img/icons/Ellipse6.svg') no-repeat 11% 54%;
+}
+.cards__items:not(:last-child) {
+  margin-bottom: 29px;
+}
+
+.cards__items:nth-child(2) {
+  background: url('../img/icons/settings.svg') no-repeat 18% 34%, url('../img/icons/Ellipse6.svg') no-repeat 11% 52%;
 }
