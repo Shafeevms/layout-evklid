@@ -53,28 +53,48 @@ body {
   justify-content: space-between;
 }
 
-.navigation__item {
+.navigation__item {}
 
-}
 .navigation__link {
+  position: relative;
   font-size: 18px;
   font-weight: 700;
 }
 
-.navigation__link::after {
-
-}
-.navigation__link:hover::after, .navigation__link:active::after {
-  content: '';
+.navigation__link:after {
+  
+  position: absolute;
+  display: block;
+  content: "";
   height: 2px;
-  width: 76px;
-  color: #FF9900;
+  width: 0%;
+  top: 30px;
+  left: 50%;
+  background-color: #FF9900;
+  -webkit-transition: width .3s ease-in-out;
+  -moz--transition: width .3s ease-in-out;
+  transition: width .3s ease-in-out;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.navigation__link:hover::after, 
+.navigation__link:focus::after {
+  width: 100%;
 }
 
 .navigation__item:not(:first-child) {
   margin-left: 100px;
 }
-
+.search {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+.search__icon {
+  /* cursor: pointer; */
+}
 .container {
   margin: 0 auto;
   padding: 0 76px 100px;
@@ -116,6 +136,11 @@ body {
 .hero__button {
   display: inline-block;
   padding: 26px 37px;
+}
+
+.hero__button:hover,
+.hero__button:focus {
+  filter: opacity(70%);
 }
 
 /* about us */
@@ -178,7 +203,10 @@ body {
   color: #FFFFFF;
   font-weight: 700;
 }
-
+.atricle__button:hover,
+.atricle__button:focus {
+  background-color: #FF9900;
+}
 .cards__list {
   width: 49%;
 }
@@ -192,6 +220,10 @@ body {
   margin-bottom: 7px;
   font-size: 24px;
   font-weight: 700;
+}
+.cards__title:focus,
+.cards__title:hover {
+  color: #FF9900;
 }
 
 .cards__text {
@@ -228,10 +260,12 @@ body {
 .ourworkprocess__steps:not(:last-child) {
   margin-right: 97px;
 }
-
+.ourworkprocess__link:focus,
+.ourworkprocess__link:hover,
 .ourworkprocess__link:active {
   color: #FF9900;
 }
+
 
 .active {
   color: #FF9900;
@@ -267,7 +301,11 @@ body {
   padding: 20px 38px;
   border: 1px solid #e5e5e5;
 }
-
+.ourworkprocess__whitebutton:hover,
+.ourworkprocess__whitebutton:focus {
+  color: #FFFFFF;
+  background-color: #333333;
+}
 .ourworkprocess__picture {}
 
 /* FAQ */
@@ -290,6 +328,7 @@ body {
   color: #222222;
   border-top: 1px solid #e5e5e5;
 }
+
 .faq__item:last-child {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -314,50 +353,58 @@ body {
   width: 1920px;
   background-color: #222222;
 }
+
 .footer__container {
   margin: 0 auto;
   display: flex;
   /* justify-content: space-between; */
   width: 1770px;
 }
+
 .footer__leftside {
   margin-right: 247px;
-
   width: 20%;
 }
-.footer__logo {
-}
+
+.footer__logo {}
+
 .footer__text {
   margin-bottom: 50px;
   color: #CACACA;
   line-height: 32.5px;
 }
-.footer__sociallist {
-}
+
+.footer__sociallist {}
+
 .footer__socialitem {
   display: inline-block;
 }
+
 .footer__socialitem:not(:last-child) {
   margin-right: 23px;
 }
+
 .footer__facebook {
   display: inline-block;
   width: 60px;
   height: 60px;
   background: url('../img/icons/fb.png') no-repeat;
 }
+
 .footer__vk {
   display: inline-block;
   width: 60px;
   height: 60px;
   background: url('../img/icons/Vk.png') no-repeat;
 }
+
 .footer__instagam {
   display: inline-block;
   width: 60px;
   height: 60px;
   background: url('../img/icons/instagram.png') no-repeat;
 }
+
 .footer__centreside {
   margin-right: 330px;
   padding-top: 10px;
@@ -367,10 +414,12 @@ body {
   margin-bottom: 25px;
   color: #CACACA;
 }
+
 .footer__form {
   display: flex;
   flex-direction: column;
 }
+
 .footer__input {
   margin-bottom: 24px;
   padding-left: 20px;
@@ -390,19 +439,21 @@ body {
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
 .footer__textarea {
   margin-bottom: 33px;
   width: 570px;
   padding-left: 20px;
   padding-top: 21px;
 }
+
 .footer__textarea::placeholder {
-  
   color: #CACACA;
 }
+
 .footer__button {
   margin-right: 30px;
   width: 269px;
@@ -411,17 +462,20 @@ body {
   color: #FFFFFF;
   cursor: pointer;
 }
+
 .checkbox_label {
   color: #CACACA;
   letter-spacing: -0.9px;
 }
+
 .footer__rightside {
   padding-top: 143px;
 }
-.footer__navlist {
-}
-.footer__navitem {
-}
+
+.footer__navlist {}
+
+.footer__navitem {}
+
 .footer__navlink {
   color: #CACACA;
   font-size: 18px;
