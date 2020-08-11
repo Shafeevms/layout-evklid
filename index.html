@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <img src="img/icons/Логотип 1.png" alt="логотип сайта" class="header__logo">
+            <img src="img/icons/Логотип1.png" alt="логотип сайта" class="header__logo">
             <nav class="navigation">
               <ul class="navigation__list">
                   <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
@@ -20,12 +20,13 @@
                   <li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
               </ul>
         </nav>
-        <a href="#" class="search">
-          <svg class="search__icon">
-            <use xlink:href="img/icons/search.svg"></use>
-        </svg>
-        <!-- разобраться с svg -->
-      </a>
+        <button class="search">
+          <svg  width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="search__icon" x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)" fill="#333333"/>
+            <circle class="search__icon" cx="11.5" cy="11.5" r="10.5" stroke="#333333" stroke-width="2" />
+            </svg>
+        
+          </button>
         </div>
     </header>
     <div class="container">
@@ -42,14 +43,13 @@
         <h2 class="title">О нас</h2>
         <p class="about-us__decription">
           Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип <span class="about-us__texticon"></span> будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
-          <!-- доделать значок внутри текста -->
         </p>
         <div class="cards">
           <article class="article">
             <div class="aricle__innerwrap">
-              <p class="article__text">
+              <h4 class="article__text">
                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.
-              </p>
+              </h4>
               <a href="#" class="atricle__button">Подробнее</a>
             </div>
           </article>
@@ -99,39 +99,24 @@
         <h3 class="faq__title title">Часто задаваемые вопросы</h3>
         <ul class="faq__list">
           <li class="faq__item">
-            <a href="#" class="faq__link">
-              <h3 class="cards__title cards__title-marginright">Из чего формируется конечная стоимость проекта?</h3>
-              <span href="#" class="faq__btn"></span>
-            </a>
-            
+            <a href="#" class="cards__title cards__title-marginright">Из чего формируется конечная стоимость проекта?</a>
+              <button class="faq__btn"></button>
           </li>
           <li class="faq__item">
-            <a href="#" class="faq__link">
-              <h3 class="cards__title cards__title-marginright">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
-              <span href="#" class="faq__btn"></span>
-            </a>
-            
+            <a href="#" class="cards__title cards__title-marginright">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</a>
+              <button class="faq__btn"></button>
           </li>
           <li class="faq__item">
-            <a href="#" class="faq__link">
-              <h3 class="cards__title cards__title-marginright">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
-              <span href="#" class="faq__btn"></span>
-            </a>
-            
+            <a href="#" class="cards__title cards__title-marginright">Я выбираю между разными компаниями. В чём ваше отличие?</a>
+              <button class="faq__btn"></button>
           </li>
           <li class="faq__item">
-            <a href="#" class="faq__link">
-              <h3 class="cards__title cards__title-marginright">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
-              <span href="#" class="faq__btn"></span>
-            </a>
-            
+            <a href="#" class="cards__title cards__title-marginright">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </a>
+              <button class="faq__btn"></button>
           </li>
           <li class="faq__item">
-            <a href="#" class="faq__link">
-              <h3 class="cards__title cards__title-marginright">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
-              <span href="#" class="faq__btn"></span>
-            </a>
-            
+            <a href="#" class="cards__title cards__title-marginright">Могу ли я вернуть деньги на каком-либо из этапов работ?</a>
+              <button class="faq__btn"></button>
           </li>
         </ul>
       </section>
@@ -179,6 +164,6 @@
       </div>
 
     </footer>
-
+<!-- https://blog.maxgraph.ru/?s=svg# -->
 </body>
 </html>

@@ -89,12 +89,17 @@ body {
 }
 .search {
   display: block;
-  width: 26px;
-  height: 26px;
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
-.search__icon {
-  /* cursor: pointer; */
+
+.search:hover .search__icon {
+  stroke: #FF9900;
 }
+
 .container {
   margin: 0 auto;
   padding: 0 76px 100px;
@@ -221,8 +226,8 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
-.cards__title:focus,
-.cards__title:hover {
+.cards__title-marginright:focus,
+.cards__title-marginright:hover {
   color: #FF9900;
 }
 
@@ -318,15 +323,17 @@ body {
 
 .faq__list {}
 
-.faq__item {}
-
-.faq__link {
+.faq__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 31px 0;
-  color: #222222;
+  
   border-top: 1px solid #e5e5e5;
+}
+
+.faq__link {
+  
 }
 
 .faq__item:last-child {
@@ -336,6 +343,7 @@ body {
 .cards__title-marginright {
   display: inline-block;
   margin-right: auto;
+  color: #222222;
 }
 
 .faq__btn {
@@ -343,6 +351,8 @@ body {
   width: 50px;
   height: 50px;
   background: url('../img/icons/+х.png') no-repeat;
+  border: none;
+  cursor: pointer;
 }
 
 /* footer */
