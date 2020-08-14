@@ -95,10 +95,12 @@ body {
   background-color: #FFFFFF;
   border: none;
   cursor: pointer;
+  transition: color 300ms;
 }
 
-.search:hover .search__icon {
-  stroke: #FF9900;
+.search:hover .search__icon,
+.search:focus .search__icon {
+color: #FF9900;
 }
 
 .container {
@@ -203,7 +205,7 @@ body {
 .atricle__button {
   display: inline-block;
   align-self: center;
-  padding: 19px 36px;
+  padding: 19px 41px;
   border: 2px solid #FF9900;
   color: #FFFFFF;
   font-weight: 700;
