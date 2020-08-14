@@ -180,7 +180,7 @@ body {
 
 .article {
   display: block;
-  width: 50%;
+  max-width: 49%;
   padding-top: 446px;
   background-image: url('../img/rectangle2.jpg');
   background-repeat: no-repeat;
@@ -230,7 +230,9 @@ body {
 .cards__title-marginright:hover {
   color: #FF9900;
 }
-
+.cards__title-marginright {
+  padding: 39px 0;
+}
 .cards__text {
   line-height: 32px;
 }
@@ -325,14 +327,15 @@ body {
 
 .faq__item {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
-  padding: 31px 0;
-
   border-top: 1px solid #e5e5e5;
 }
 
+
 .faq__link {
+  display: block;
 
 }
 
@@ -342,7 +345,6 @@ body {
 
 .cards__title-marginright {
   display: inline-block;
-  margin-right: auto;
   color: #222222;
 }
 
@@ -454,7 +456,7 @@ body {
 }
 
 .footer__textarea {
-  margin-bottom: 33px;
+  margin-bottom: 15px;
   width: 570px;
   padding-left: 20px;
   padding-top: 21px;
