@@ -42,14 +42,14 @@
         </p>
         <a href="#" class="hero__button button">Заказать расчёт</a>
         <div class="checkbox">
-          <label class="checkbox__label">
-            <input type="checkbox" name="1" id="1">
+          <label class="checkbox__label checkbox__label-checked">
+            <input type="checkbox" name="1" id="1" class="checkbox__input">
           </label>
           <label class="checkbox__label">
-            <input type="checkbox" name="1" id="2">
+            <input type="checkbox" name="1" id="2" class="checkbox__input">
           </label>
           <label class="checkbox__label">
-            <input type="checkbox" name="1" id="3">
+            <input type="checkbox" name="1" id="3" class="checkbox__input">
           </label>
         </div>
       </section>
@@ -131,7 +131,7 @@
       </section>
     </main>
     <footer class="footer container">
-      <div class="footer__leftside">
+      <div class="footer__leftside d-none">
         <img src="img/icons/logo2.png" alt="лого" class="footer__logo">
         <p class="footer__text">
           Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.
@@ -153,20 +153,23 @@
           <label for="message" class="sr-only"></label>
          <div class="footer__buttonwrapper">
           <button class="footer__button">Отправить данные</button>
-          <input checked type="checkbox" name="personal date" id="2">
-          <label for="2" class="checkbox_label">Согласен на обработку данных</label>
+          <input checked type="checkbox" name="personaldate" id="4">
+          <label for="4" class="checkbox_label">Согласен на обработку данных</label>
          </div>
         </form>
       </div>
-      <ul class="footer__navlist">
-        <li class="footer__navitem"><a href="#" class="footer__navlink">О нас </a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Проекты</a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Отзывы</a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Договор оферты</a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Договор подряда</a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Конфиденциальность</a></li>
-        <li class="footer__navitem"><a href="#" class="footer__navlink">Партнёрское соглашение</a></li>
-      </ul>
+      <div class="right__side">
+        <img src="img/icons/logo2.png" alt="лого" class="footer__logo">
+        <ul class="footer__navlist">
+          <li class="footer__navitem"><a href="#" class="footer__navlink">О нас </a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Проекты</a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Отзывы</a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Договор оферты</a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Договор подряда</a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Конфиденциальность</a></li>
+          <li class="footer__navitem"><a href="#" class="footer__navlink">Партнёрское соглашение</a></li>
+        </ul>
+      </div>
     </footer>
 
 </body>
