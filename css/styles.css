@@ -551,6 +551,9 @@ color: #FF9900;
 }
 .d-none {
 }
+.footer__sociallist-tablet {
+  display: none;
+}
 
 @media(max-width: 1025px) {
   .container {
@@ -627,7 +630,7 @@ color: #FF9900;
   .cards__title-marginright {
     width: 911px;
   }
-  .footer__logo {
+  .footer__logo-desktop {
     display: none;
   }
   .footer__logo-tablet {
@@ -639,6 +642,11 @@ color: #FF9900;
   .footer {
     justify-content: space-between;
   }
-
-
+  .footer__centreside {
+    margin-right: 0;
+  }
+  .footer__sociallist-tablet {
+    display: flex;
+    margin-top: 31px;
+  }
 }
