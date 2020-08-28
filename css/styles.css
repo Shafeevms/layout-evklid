@@ -175,6 +175,7 @@ body {
 }
 
 .hero__title {
+  max-width: 1100px;
   margin-bottom: 18px;
   font-weight: 800;
   font-size: 70px;
@@ -184,6 +185,7 @@ body {
 }
 
 .hero__text {
+  max-width: 900px;
   margin-bottom: 100px;
   color: #FFFFFF;
   font-size: 24px;
@@ -239,7 +241,7 @@ body {
 .article {
   display: flex;
   max-width: 49%;
-  /* padding-top: 446px; */
+
   background-image: url('../img/rectangle2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -427,7 +429,7 @@ body {
 }
 
 .footer__leftside {
-  margin-right: 247px;
+  margin-right: auto;
   width: 20%;
 }
 
@@ -471,7 +473,7 @@ body {
 }
 
 .footer__centreside {
-  margin-right: 330px;
+  margin-right: auto;
 
   padding-right: 13px;
 }
@@ -561,19 +563,24 @@ body {
   display: none;
 }
 
-@media(max-width: 1025px) {
-  .container {
-    margin: 0 auto;
-    padding: 0 50px;
-    max-width: 1024px;
+@media(max-width: 1440px) {
+  .hero {
+    padding-right: 120px;
+    padding-bottom: 30px;
+  }
+  .hero__title {
+    font-size: 60px;
+    line-height: 73px;
+  }
+  .hero__text {
+    margin-bottom: 110px;
+    font-size: 20px;
+    line-height: 24px;
   }
   .header__logo {
     margin-right: 46px;
     height: 48px;
     width: 150px;
-  }
-  .header__burger {
-    display: inline-block;
   }
   .navigation {
     margin-right: 0;
@@ -588,32 +595,11 @@ body {
   .navigation__item:not(:first-child) {
     margin-left: 49px;
   }
-  .hero {
-    padding-right: 120px;
-    padding-bottom: 30px;
-  }
-  .hero__title {
-    font-size: 60px;
-    line-height: 73px;
-  }
-  .hero__text {
-    margin-bottom: 110px;
-    font-size: 20px;
-    line-height: 24px;
-  }
-  .hero__button {
-    margin-bottom: 69px;
-  }
-  .checkbox {
-    display: flex;
-  }
-  .title {
-    font-weight: 400;
-  }
   .cards {
     flex-wrap: wrap;
   }
   .article {
+    padding-top: 446px;
     max-width: 100%;
     margin-bottom: 40px;
   }
@@ -625,9 +611,6 @@ body {
   }
   .cards__list {
     width: 100%;
-  }
-  .ourworkprocess__article {
-    width: 43%;
   }
   .cards__title {
     font-size: 20px;
@@ -654,4 +637,32 @@ body {
     display: flex;
     margin-top: 31px;
   }
+  .footer__logo-desktop {
+    display: block;
+  }
+
+}
+
+@media(max-width: 1025px) {
+  .container {
+    margin: 0 auto;
+    padding: 0 50px;
+    max-width: 1024px;
+  }
+  .header__burger {
+    display: inline-block;
+  }
+  .hero__button {
+    margin-bottom: 69px;
+  }
+  .checkbox {
+    display: flex;
+  }
+  .title {
+    font-weight: 400;
+  }
+  .ourworkprocess__article {
+    width: 43%;
+  }
+
 }
