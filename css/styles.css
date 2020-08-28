@@ -163,7 +163,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0 74px;
   max-width: 1920px;
@@ -172,7 +171,7 @@ body {
 .hero {
   margin-bottom: 103px;
   background: url('../img/hero.jpg') center/cover no-repeat;
-  padding: 106px 850px 91px 78px;
+  padding: 106px 0 91px 78px;
 }
 
 .hero__title {
@@ -238,9 +237,9 @@ body {
 }
 
 .article {
-  display: block;
+  display: flex;
   max-width: 49%;
-  padding-top: 446px;
+  /* padding-top: 446px; */
   background-image: url('../img/rectangle2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -248,6 +247,8 @@ body {
 
 .aricle__innerwrap {
   display: flex;
+  align-self: flex-end;
+  height: 10em;
   padding: 37px 64px 44px 54px;
   background-image: url('../img/rectangle5.png');
   background-repeat: no-repeat;
@@ -418,7 +419,7 @@ body {
 
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding-top: 50px;
   padding-bottom: 75px;
