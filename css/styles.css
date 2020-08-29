@@ -122,15 +122,15 @@ body {
 }
 
 .firstline {
-  top: -10px;
+  top: -5px;
 }
 
 .secondline {
-  top: -1px;
+  top: 2px;
 }
 
 .thirdline {
-  top: 8px;
+  top: 9px;
 }
 
 .checkbox {
@@ -241,17 +241,16 @@ body {
 .article {
   display: flex;
   max-width: 49%;
-
   background-image: url('../img/rectangle2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.aricle__innerwrap {
+.article__innerwrap {
   display: flex;
   align-self: flex-end;
-  height: 10em;
-  padding: 37px 64px 44px 54px;
+  height: 11em;
+  padding: 40px 64px 36px 54px;
   background-image: url('../img/rectangle5.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -282,7 +281,7 @@ body {
 }
 
 .cards__items {
-  padding: 70px 109px 56px 298px;
+  padding: 78px 109px 56px 298px;
   border: 1px solid #CACACA;
 }
 
@@ -384,7 +383,7 @@ body {
 /* FAQ */
 
 .faq {
-  padding-bottom: 102px;
+  padding-bottom: 96px;
 }
 
 .faq__title {
@@ -403,7 +402,7 @@ body {
 
 .cards__title-marginright {
   display: inline-block;
-  padding: 39px 10px;
+  padding: 40px 10px;
   color: #222222;
   width: 100%;
   text-align: start;
@@ -474,12 +473,12 @@ body {
 
 .footer__centreside {
   margin-right: auto;
-
-  padding-right: 13px;
+  padding-top: 10px;
+  padding-right: 85px;
 }
 
 .footer__title {
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   font-weight: 400;
   color: #CACACA;
 }
@@ -521,8 +520,9 @@ body {
 .footer__textarea::placeholder {
   color: #CACACA;
 }
+
 .footer__buttonwrapper {
-  /* margin-top: 15px; */
+  margin-top: 32px;
 }
 
 .footer__button {
@@ -539,9 +539,10 @@ body {
 }
 
 .footer__rightside {
-  padding-top: 15px;
+  padding-top: 35px;
   padding-right: 13px;
 }
+
 .footer__logo-desktop {
   display: none;
 }
@@ -578,7 +579,7 @@ body {
     line-height: 24px;
   }
   .header__logo {
-    margin-right: 46px;
+    margin-right: 25px;
     height: 48px;
     width: 150px;
   }
@@ -640,7 +641,6 @@ body {
   .footer__logo-desktop {
     display: block;
   }
-
 }
 
 @media(max-width: 1025px) {
@@ -649,11 +649,26 @@ body {
     padding: 0 50px;
     max-width: 1024px;
   }
+  .header {
+    margin-bottom: 12px;
+  }
+  .hero {
+    margin-bottom: 61px;
+    padding: 162px 45px 31px 45px;
+  }
+  .hero__title {
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+  }
+  .hero__text {
+    max-width: 80%;
+  }
   .header__burger {
     display: inline-block;
   }
   .hero__button {
     margin-bottom: 69px;
+    padding: 26px 38px;
   }
   .checkbox {
     display: flex;
@@ -661,8 +676,89 @@ body {
   .title {
     font-weight: 400;
   }
+  .about-us__decription {
+    margin-bottom: 62px;
+  }
+  .article {
+    padding-top: 477px;
+  }
+  .article__innerwrap {
+    padding: 36px 51px 37px 44px;
+  }
+  .article__text {
+    margin-right: auto;
+    max-width: 60%;
+    line-height: 33px;
+  }
+  .cards__items {
+    padding: 70px 90px 59px 365px;
+  }
+  .cards__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+  }
+  .cards__title-marginright {
+    padding-left: 0;
+    font-size: 20px;
+  }
+  .cards__items:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .cards__items:nth-child(2) {
+    background: url('../img/icons/settings.svg') no-repeat 20% 34%, url('../img/icons/ellipse6.svg') no-repeat 13% 52%;
+  }
+  .cards__items:first-child {
+    background: url('../img/icons/package.svg') no-repeat 19% 42%, url('../img/icons/ellipse6.svg') no-repeat 13% 50%;
+  }
   .ourworkprocess__article {
-    width: 43%;
+    width: 47%;
+  }
+  .navigation__item:not(:first-child) {
+    margin-left: 64px;
+  }
+  .about-us {
+    margin-bottom: 62px;
+  }
+  .ourworkprocess__picture {
+    width: 47%;
+  }
+  .ourworkprocess__text {
+    margin-bottom: 28px;
+  }
+  .ourworkprocess {
+    margin-bottom: 62px;
+  }
+  .faq {
+    padding-bottom: 50px;
+  }
+  .faq__title {
+    margin-bottom: 38px;
+  }
+  .faq__item {
+     padding-top: 13px;
+  }
+  .footer__input, .footer__textarea  {
+    width: 534px;
+  }
+  .footer__centreside {
+    margin-right: 57px;
+    padding-right: 0;
+  }
+  .footer__rightside {
+    padding: 0;
+    align-self: flex-start;
+  }
+  .footer {
+    justify-content: start;
+  }
+  .footer__logo-desktop {
+    margin-bottom: 10px;
+  }
+  .footer__navitem {
+    margin-bottom: 13px;
+  }
+  .footer__button {
+    width: 243px;
   }
 
 }
