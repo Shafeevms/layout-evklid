@@ -617,6 +617,7 @@ body {
     font-size: 20px;
   }
   .cards__title-marginright {
+    padding-right: 170px;
     width: 100%;
   }
   .footer__logo-desktop {
@@ -698,7 +699,10 @@ body {
     font-size: 24px;
   }
   .cards__title-marginright {
+    margin-bottom: 0;
     padding-left: 0;
+    padding-top: 40px;
+    padding-bottom: 45px;
     font-size: 20px;
   }
   .cards__items:not(:last-child) {
@@ -729,14 +733,14 @@ body {
     margin-bottom: 62px;
   }
   .faq {
-    padding-bottom: 50px;
+    padding-bottom: 95px;
   }
   .faq__title {
     margin-bottom: 38px;
   }
-  .faq__item {
+  /* .faq__item {
      padding-top: 13px;
-  }
+  } */
   .footer__input, .footer__textarea  {
     width: 534px;
   }
