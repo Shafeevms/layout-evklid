@@ -35,7 +35,9 @@ body {
   top: 3px;
   margin-right: auto;
 }
+.header__logo-mobile {
 
+}
 .navigation {
   display: flex;
   /* width: 1770px;
@@ -243,6 +245,7 @@ body {
   max-width: 49%;
   background-image: url('../img/rectangle2.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -492,7 +495,8 @@ body {
   margin-bottom: 24px;
   padding-left: 20px;
   height: 60px;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   background-color: #414141;
 }
 
@@ -522,9 +526,10 @@ body {
 }
 
 .footer__buttonwrapper {
+  display: flex;
+  align-items: center;
   margin-top: 32px;
 }
-
 .footer__button {
   margin-right: 25px;
   width: 265px;
@@ -535,6 +540,7 @@ body {
 }
 
 .checkbox_label {
+  align-self: center;
   color: #CACACA;
 }
 
@@ -562,6 +568,12 @@ body {
 
 .footer__sociallist-tablet {
   display: none;
+}
+
+@media(max-width: 1600px) {
+  .cards__items {
+    padding: 78px 46px 56px 280px;
+  }
 }
 
 @media(max-width: 1440px) {
@@ -599,6 +611,12 @@ body {
   .cards {
     flex-wrap: wrap;
   }
+  .cards__items:first-child {
+    background: url(../img/icons/package.svg) no-repeat 11% 46%, url(../img/icons/ellipse6.svg) no-repeat 6% 54%;
+  }
+  .cards__items:nth-child(2) {
+    background: url(../img/icons/settings.svg) no-repeat 12% 34%, url(../img/icons/ellipse6.svg) no-repeat 6% 52%;
+}
   .article {
     padding-top: 446px;
     max-width: 100%;
@@ -651,7 +669,7 @@ body {
     max-width: 1024px;
   }
   .header {
-    margin-bottom: 12px;
+    padding-bottom: 12px;
   }
   .hero {
     margin-bottom: 61px;
@@ -733,7 +751,7 @@ body {
     margin-bottom: 62px;
   }
   .faq {
-    padding-bottom: 95px;
+    padding-bottom: 47px;
   }
   .faq__title {
     margin-bottom: 38px;
@@ -741,9 +759,7 @@ body {
   /* .faq__item {
      padding-top: 13px;
   } */
-  .footer__input, .footer__textarea  {
-    width: 534px;
-  }
+
   .footer__centreside {
     margin-right: 57px;
     padding-right: 0;
@@ -753,6 +769,8 @@ body {
     align-self: flex-start;
   }
   .footer {
+    padding-top: 48px;
+    padding-bottom: 74px;
     justify-content: start;
   }
   .footer__logo-desktop {
@@ -762,7 +780,107 @@ body {
     margin-bottom: 13px;
   }
   .footer__button {
+    margin-right: 21px;
     width: 243px;
   }
+}
 
+@media(max-width: 955px) {
+  .navigation__list {
+    display: none;
+  }
+  .search {
+    margin-left: auto;
+    margin-right: 25px;
+  }
+  .footer {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .footer__centreside {
+    margin-right: 0;
+  }
+  .footer__rightside {
+    margin-top: 50px;
+  }
+  .footer__navlist {
+    display: none;
+  }
+  .ourworkprocess__picture {
+    display: none;
+  }
+  .ourworkprocess__article {
+    width: 100%;
+  }
+  .footer__button {
+    margin-bottom: 11px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .hero {
+    padding-top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .hero__text {
+    margin-bottom: 80px;
+    font-size: 16px;
+  }
+  .article {
+    margin-bottom: 232px;
+    padding-top: 250px;
+  }
+  .article__innerwrap {
+    padding: 0;
+    flex-direction: column;
+    background-image: none;
+  }
+  .article__text {
+    margin-right: 0;
+    max-width: 100%;
+    color: #000;
+    font-weight: 400;
+    transform: translateY(200px);
+  }
+  .atricle__button {
+    color: #FF9900;
+    align-self: start;
+    transform: translateY(220px);
+  }
+  .cards__items {
+    padding: 150px 30px 40px 30px;
+  }
+  .cards__items:first-child {
+    background: url('../img/icons/package.svg') no-repeat 12% 14%/11%, url('../img/icons/ellipse6.svg') no-repeat 7% 22%/9%;
+  }
+  .cards__items:nth-child(2) {
+    background: url('../img/icons/settings.svg') no-repeat 12% 14%/10%, url('../img/icons/ellipse6.svg') no-repeat 7% 22%/9%;
+  }
+  .footer__input, .footer__textarea  {
+    max-width: 600px;
+    width: 100%;
+  }
+  .footer__buttonwrapper {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 550px) {
+  .ourworkprocess__steps:not(:last-child) {
+    margin-right: 41px;
+  }
+  .article {
+    margin-bottom: 300px;
+  }
+}
+@media(max-width: 320px) {
+  .picture {}
 }
