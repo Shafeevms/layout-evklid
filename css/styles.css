@@ -35,9 +35,7 @@ body {
   top: 3px;
   margin-right: auto;
 }
-.header__logo-mobile {
 
-}
 .navigation {
   display: flex;
   /* width: 1770px;
@@ -882,5 +880,9 @@ body {
   }
 }
 @media(max-width: 320px) {
-  .picture {}
+  .header__logo {
+    margin-right: 25px;
+    height: 31px;
+    width: 97px;
+  }
 }
