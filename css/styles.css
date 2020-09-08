@@ -1044,6 +1044,7 @@ body {
   }
   .footer {
     padding-top: 30px;
+    padding-bottom: 21px;
   }
   .footer__form {
     margin-top: 20px;
@@ -1051,10 +1052,39 @@ body {
   .footer__input {
     font-size: 14px;
   }
+  .footer__buttonwrapper {
+    margin-top: 29px;
+  }
   .footer__button {
     margin: 0;
+    margin-bottom: 17px;
     width: 183px;
+    height: 43px;
     font-size: 12px;
     font-weight: 800;
+  }
+  .checkbox_label {
+    font-size: 15px;
+  }
+  .footer__rightside {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo-desktop {
+    width: 131px;
+  }
+  .footer__sociallist-tablet {
+    margin-top: 6px;
+  }
+  .footer__facebook, .footer__vk, .footer__instagam {
+    background-position: center;
+    background-size: contain;
+    height: 34px;
+    width: 34px;
+  }
+  .footer__socialitem:not(:last-child) {
+    margin-right: 15px;
   }
 }
