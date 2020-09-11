@@ -330,7 +330,9 @@ body {
 .ourworkprocess__steps:not(:last-child) {
   margin-right: 97px;
 }
-
+.ourworkprocess__link {
+  color: #333333;
+}
 .ourworkprocess__link:focus, .ourworkprocess__link:hover, .ourworkprocess__link:active {
   color: #FF9900;
 }
@@ -514,7 +516,7 @@ body {
 }
 
 .footer__textarea {
-  width: 570px;
+  max-width: 570px;
   padding-left: 20px;
   padding-top: 21px;
 }
@@ -756,7 +758,7 @@ body {
     margin-bottom: 62px;
   }
   .faq {
-    padding-bottom: 47px;
+    padding-bottom: 43px;
   }
   .faq__title {
     margin-bottom: 38px;
@@ -768,22 +770,16 @@ body {
   .footer__centreside {
     margin-right: 57px;
     padding-right: 0;
+    padding-top: 54px;
   }
-  .footer {
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
 
-    padding-top: 48px;
-    padding-bottom: 74px;
-    /* justify-content: start; */
-  }
   .footer__rightside {
     padding: 0;
     /* align-self: flex-start; */
   }
-  .footer__navlist {
-    display: none;
+  .footer {
+    justify-content: start;
+    padding-bottom: 70px;
   }
   .footer__logo-desktop {
     margin-bottom: 10px;
@@ -797,12 +793,34 @@ body {
   }
   .footer__rightside {
     margin-top: 50px;
+    padding-left: 10px;
+  }
+  .footer__input, .footer__textarea {
+    max-width: 532px;
   }
 }
 
+/*
+.faq {
+    padding-bottom: 47px;
+  }
+.footer__centerside {
+  padding-top: 0;
+*/
+
 @media(max-width: 768px) {
+  .footer {
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-
+    padding-top: 48px;
+    padding-bottom: 74px;
+    /* justify-content: start; */
+  }
+  .footer__navlist {
+    display: none;
+  }
   /* .footer {
     justify-content: center;
     flex-direction: column;
@@ -810,9 +828,8 @@ body {
   } */
   .footer__centreside {
     margin-right: 0;
+    padding-top: 0;
   }
-
-
   .ourworkprocess__picture {
     display: none;
   }
@@ -876,6 +893,9 @@ body {
   }
   .footer__buttonwrapper {
     flex-direction: column;
+  }
+  .footer__rightside {
+    padding-right: 0;
   }
 }
 
@@ -1029,7 +1049,7 @@ body {
     margin-bottom: 41px;
   }
   .faq {
-    padding-bottom: 15px;
+    padding-bottom: 17px;
   }
   .faq__list {
     margin-top: 16px;
@@ -1044,7 +1064,7 @@ body {
     background: url(../img/icons/+х.png) 100% 67%/11% no-repeat;
   }
   .footer {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 21px;
   }
   .footer__form {
