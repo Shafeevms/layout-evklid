@@ -324,9 +324,27 @@ body {
 
 .ourworkprocess__steplist {
   display: flex;
+  position: relative;
   margin-bottom: 49px;
 }
-
+.ourworkprocess__steplist::before {
+  content: '';
+  position: absolute;
+  top: -17px;
+  height: 3px;
+  max-width: 469px;
+  width: 100%;
+  background-color: #CACACA;
+}
+.ourworkprocess__steps:active::before {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 10px;
+  top: -17px;
+  z-index: 10;
+  background-color: #FF9900;
+}
 .ourworkprocess__steps:not(:last-child) {
   margin-right: 97px;
 }
