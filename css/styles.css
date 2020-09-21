@@ -336,15 +336,7 @@ body {
   width: 100%;
   background-color: #CACACA;
 }
-.ourworkprocess__steps:active::before {
-  content: '';
-  position: absolute;
-  height: 3px;
-  width: 10px;
-  top: -17px;
-  z-index: 10;
-  background-color: #FF9900;
-}
+
 .ourworkprocess__steps:not(:last-child) {
   margin-right: 97px;
 }
@@ -358,7 +350,16 @@ body {
 .active {
   color: #FF9900;
 }
-
+.active:after {
+  content: '';
+  position: absolute;
+  top: -17px;
+  left: 0;
+  height: 3px;
+  max-width: 140px;
+  width: 100%;
+  background-color: #FF9900;
+}
 .ourworkprocess__innerwrap {
   display: flex;
   justify-content: space-between;
@@ -1126,4 +1127,25 @@ body {
   .footer__socialitem:not(:last-child) {
     margin-right: 15px;
   }
+  .ourworkprocess__steplist::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    height: 3px;
+    max-width: 288px;
+    width: 100%;
+    background-color: #CACACA;
+  }
+  .active:after {
+    content: '';
+    position: absolute;
+    top: 18px;
+    left: 0;
+    height: 3px;
+    max-width: 85px;
+    width: 100%;
+    background-color: #FF9900;
+  }
+
 }
+
