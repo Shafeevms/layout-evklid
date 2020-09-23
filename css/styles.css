@@ -202,6 +202,7 @@ body {
 .hero__button {
   display: inline-block;
   padding: 26px 40px;
+  transition: filter 400ms;
 }
 
 .hero__button:hover, .hero__button:focus {
@@ -271,6 +272,7 @@ body {
   border: 2px solid #FF9900;
   color: #FFFFFF;
   font-weight: 700;
+  transition: background-color 400ms;
 }
 
 .atricle__button:hover, .atricle__button:focus {
@@ -326,7 +328,7 @@ body {
   display: flex;
   position: relative;
   padding-top: 14px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 .ourworkprocess__steplist::before {
   content: '';
@@ -343,6 +345,7 @@ body {
 }
 .ourworkprocess__link {
   color: #333333;
+  transition: color 400ms;
 }
 .ourworkprocess__link:focus, .ourworkprocess__link:hover, .ourworkprocess__link:active {
   color: #FF9900;
@@ -385,6 +388,7 @@ body {
   padding: 20px 38px;
   color: #FFFFFF;
   background-color: #FF9900;
+  transition: filter 400ms;
 }
 .ourworkprocess__yellowbutton:hover, .ourworkprocess__yellowbutton:focus {
   filter: opacity(70%);
@@ -439,6 +443,7 @@ body {
   outline: none;
   border: none;
   cursor: pointer;
+  transition: color 400ms;
 }
 
 /* footer */
@@ -559,6 +564,7 @@ body {
   background-color: #FF9900;
   color: #FFFFFF;
   cursor: pointer;
+  transition: filter 400ms;
 }
 .footer__button:hover, .footer__button:focus {
   filter: opacity(70%);
@@ -1049,9 +1055,9 @@ body {
     font-size: 14px;
   }
   .ourworkprocess__steplist {
-  margin-top: 6px;
+    margin-top: 6px;
+    margin-bottom: 16px;
     padding-top: 29px;
-    padding-bottom: 16px;
   }
   .ourworkprocess__steps:not(:last-child) {
     margin-right: 44px;
