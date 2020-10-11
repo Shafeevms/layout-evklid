@@ -169,9 +169,27 @@ body {
 }
 
 .hero {
+  position: relative;
   margin-bottom: 103px;
-  background: url('../img/hero.jpg') center/cover no-repeat;
+  overflow: hidden;
+
+  /* background: url('../img/hero.jpg') center/cover no-repeat; */
+}
+.hero__content {
+  position: relative;
   padding: 106px 0 91px 78px;
+  z-index: 1000;
+}
+/* slider */
+
+.swiper-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.swiper-slide {
+  z-index: 1;
 }
 
 .hero__title {
@@ -182,6 +200,7 @@ body {
   line-height: 86px;
   letter-spacing: 2.3px;
   color: #FFFFFF;
+  z-index: 1000;
 }
 
 .hero__text {
@@ -190,6 +209,7 @@ body {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
+  z-index: 1000;
 }
 
 .button {
@@ -197,12 +217,14 @@ body {
   font-size: 24px;
   font-weight: 700;
   color: #FFFFFF;
+  z-index: 1000;
 }
 
 .hero__button {
   display: inline-block;
   padding: 26px 40px;
   transition: filter 400ms;
+  z-index: 1000;
 }
 
 .hero__button:hover, .hero__button:focus {
@@ -618,7 +640,7 @@ body {
 }
 
 @media(max-width: 1440px) {
-  .hero {
+  .hero__content {
     padding-right: 120px;
     padding-bottom: 30px;
   }
@@ -653,10 +675,10 @@ body {
     flex-wrap: wrap;
   }
   .cards__items:first-child {
-    background: url(../img/icons/package.svg) no-repeat 11% 46%, url(../img/icons/ellipse6.svg) no-repeat 6% 54%;
+    background: url('../img/icons/package.svg') no-repeat 11% 46%, url('../img/icons/ellipse6.svg') no-repeat 6% 54%;
   }
   .cards__items:nth-child(2) {
-    background: url(../img/icons/settings.svg) no-repeat 12% 34%, url(../img/icons/ellipse6.svg) no-repeat 6% 52%;
+    background: url('../img/icons/settings.svg') no-repeat 12% 34%, url('../img/icons/ellipse6.svg') no-repeat 6% 52%;
 }
   .article {
     padding-top: 446px;
@@ -719,7 +741,7 @@ body {
   .header {
     padding-bottom: 12px;
   }
-  .hero {
+  .hero__content {
     margin-bottom: 61px;
     padding: 162px 45px 31px 45px;
   }
@@ -885,7 +907,7 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
-  .hero {
+  .hero__content {
     padding-top: 120px;
     padding-left: 10px;
     padding-right: 10px;
@@ -980,7 +1002,7 @@ body {
     text-align: center;
     max-width: 90%;
   }
-  .hero {
+  .hero__content {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
@@ -1079,7 +1101,7 @@ body {
   }
   .ourworkprocess__yellowbutton {
     margin-right: 12px;
-    padding: 13px 43px 14px 44px;;
+    padding: 13px 43px 14px 44px;
     font-size: 12px;
     font-weight: 700;
   }

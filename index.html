@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normolize.css">
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -37,6 +42,7 @@
     </header>
     <main class="container main">
       <section class="hero">
+       <div class="hero__content">
         <h1 class="hero__title">
           Проектные решения любой сложности
         </h1>
@@ -44,7 +50,8 @@
           Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
         </p>
         <a href="#" class="hero__button button">Заказать расчёт</a>
-        <div class="checkbox">
+       </div>
+        <!-- <div class="checkbox">
           <label class="checkbox__label checkbox__label-checked">
             <input type="checkbox" name="1" id="1" class="checkbox__input">
           </label>
@@ -54,8 +61,22 @@
           <label class="checkbox__label">
             <input type="checkbox" name="1" id="3" class="checkbox__input">
           </label>
-        </div>
+        </div> -->
+                <!-- Slider main container -->
+          <div class="swiper-container" data-mobile="false">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="img/hero.jpg" alt="картинка сладйера"></div>
+              <div class="swiper-slide"><img src="img/apartment.png" alt="картинка сладйера"></div>
+              <div class="swiper-slide"><img src="img/brown.png" alt="картинка сладйера"></div>
+
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          </div>
       </section>
+
       <section class="about-us">
         <h2 class="title">О нас</h2>
         <p class="about-us__decription">
@@ -181,5 +202,6 @@
         </ul>
       </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
