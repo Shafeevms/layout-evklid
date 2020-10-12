@@ -7,8 +7,17 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#accordion" ).accordion();
+      } );
+  </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <title>Document</title>
@@ -20,7 +29,7 @@
               <source srcset="img/icons/logo-min.png" media="screen and (max-width: 320px)">
               <img src="img/icons/logo1.png" alt="логотип сайта" class="header__logo">
             </picture>
-            <ul class="navigation__list">
+            <ul class="navigation__list navigation__burger">
               <li class="navigation__item"><a href="#" class="navigation__link">О нас</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Проекты</a></li>
               <li class="navigation__item"><a href="#" class="navigation__link">Этапы</a></li>
@@ -135,21 +144,41 @@
       </section>
       <section class="faq">
         <h3 class="faq__title title">Часто задаваемые вопросы</h3>
-        <ul class="faq__list">
+        <ul id="accordion" class="faq__list">
           <li class="faq__item">
             <button class="cards__title cards__title-marginright">Из чего формируется конечная стоимость проекта?</button>
+            <p class='faq__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse id nam quisquam, sapiente accusamus laboriosam? Libero aspernatur voluptatibus atque accusantium fugit at, nemo, quo perferendis, praesentium rem cum officiis molestiae.
+            Voluptatum maxime quaerat laborum earum deserunt? Quae, vitae at. Consequatur sit autem ex, voluptatibus ad pariatur ipsa delectus doloremque? Fuga ipsa iusto quo, quasi non earum ipsam at fugiat minus!
+            Dolorem quaerat tempore sunt nihil dolor provident, quidem deleniti nam unde velit eos quia. Voluptatem asperiores esse hic iusto blanditiis consequatur sunt ullam, reiciendis perferendis? Repudiandae dolores esse eaque ducimus!
+            </p>
           </li>
           <li class="faq__item">
             <button class="cards__title cards__title-marginright">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
+            <p class='faq__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse id nam quisquam, sapiente accusamus laboriosam? Libero aspernatur voluptatibus atque accusantium fugit at, nemo, quo perferendis, praesentium rem cum officiis molestiae.
+              Voluptatum maxime quaerat laborum earum deserunt? Quae, vitae at. Consequatur sit autem ex, voluptatibus ad pariatur ipsa delectus doloremque? Fuga ipsa iusto quo, quasi non earum ipsam at fugiat minus!
+              Dolorem quaerat tempore sunt nihil dolor provident, quidem deleniti nam unde velit eos quia. Voluptatem asperiores esse hic iusto blanditiis consequatur sunt ullam, reiciendis perferendis? Repudiandae dolores esse eaque ducimus!
+              </p>
           </li>
           <li class="faq__item">
             <button class="cards__title cards__title-marginright">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+            <p class='faq__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse id nam quisquam, sapiente accusamus laboriosam? Libero aspernatur voluptatibus atque accusantium fugit at, nemo, quo perferendis, praesentium rem cum officiis molestiae.
+              Voluptatum maxime quaerat laborum earum deserunt? Quae, vitae at. Consequatur sit autem ex, voluptatibus ad pariatur ipsa delectus doloremque? Fuga ipsa iusto quo, quasi non earum ipsam at fugiat minus!
+              Dolorem quaerat tempore sunt nihil dolor provident, quidem deleniti nam unde velit eos quia. Voluptatem asperiores esse hic iusto blanditiis consequatur sunt ullam, reiciendis perferendis? Repudiandae dolores esse eaque ducimus!
+              </p>
           </li>
           <li class="faq__item">
             <button class="cards__title cards__title-marginright">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </button>
+            <p class='faq__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse id nam quisquam, sapiente accusamus laboriosam? Libero aspernatur voluptatibus atque accusantium fugit at, nemo, quo perferendis, praesentium rem cum officiis molestiae.
+              Voluptatum maxime quaerat laborum earum deserunt? Quae, vitae at. Consequatur sit autem ex, voluptatibus ad pariatur ipsa delectus doloremque? Fuga ipsa iusto quo, quasi non earum ipsam at fugiat minus!
+              Dolorem quaerat tempore sunt nihil dolor provident, quidem deleniti nam unde velit eos quia. Voluptatem asperiores esse hic iusto blanditiis consequatur sunt ullam, reiciendis perferendis? Repudiandae dolores esse eaque ducimus!
+              </p>
           </li>
           <li class="faq__item">
             <button class="cards__title cards__title-marginright">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+            <p class='faq__text'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse id nam quisquam, sapiente accusamus laboriosam? Libero aspernatur voluptatibus atque accusantium fugit at, nemo, quo perferendis, praesentium rem cum officiis molestiae.
+              Voluptatum maxime quaerat laborum earum deserunt? Quae, vitae at. Consequatur sit autem ex, voluptatibus ad pariatur ipsa delectus doloremque? Fuga ipsa iusto quo, quasi non earum ipsam at fugiat minus!
+              Dolorem quaerat tempore sunt nihil dolor provident, quidem deleniti nam unde velit eos quia. Voluptatem asperiores esse hic iusto blanditiis consequatur sunt ullam, reiciendis perferendis? Repudiandae dolores esse eaque ducimus!
+              </p>
           </li>
         </ul>
       </section>

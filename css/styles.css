@@ -37,6 +37,7 @@ body {
 }
 
 .navigation {
+  position: relative;
   display: flex;
   /* width: 1770px;
   margin: 0 auto; */
@@ -53,7 +54,9 @@ body {
   justify-content: space-between;
 }
 
-.navigation__item {}
+.navigation__item {
+
+}
 
 .navigation__link {
   position: relative;
@@ -111,6 +114,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 100;
 }
 
 .line {
@@ -178,7 +182,7 @@ body {
 .hero__content {
   position: relative;
   padding: 106px 0 91px 78px;
-  z-index: 1000;
+  z-index: 50;
 }
 /* slider */
 
@@ -435,6 +439,10 @@ body {
 
 .faq {
   padding-bottom: 96px;
+}
+.faq__text {
+  line-height: 15px;
+  overflow-y: auto;
 }
 
 .faq__title {
@@ -726,8 +734,23 @@ body {
 }
 
 @media(max-width: 1024px) {
+  .navigation__burger {
+    position: fixed;
+    flex-direction: column;
+    padding: 20px 0;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #FF9900;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+  }
   .navigation__list {
-    display: none;
+  }
+  .navigation__item,
+  .navigation__item:not(:first-child) {
+    margin: 0;
   }
   .search {
     margin-left: auto;
@@ -805,9 +828,9 @@ body {
   .ourworkprocess__article {
     width: 47%;
   }
-  .navigation__item:not(:first-child) {
+  /* .navigation__item:not(:first-child) {
     margin-left: 64px;
-  }
+  } */
   .about-us {
     margin-bottom: 62px;
   }
@@ -826,9 +849,9 @@ body {
   .faq__title {
     margin-bottom: 38px;
   }
-  /* .faq__item {
-     padding-top: 13px;
-  } */
+  .faq__text {
+    font-size: 16px;
+  }
 
   .footer__centreside {
     margin-right: 57px;
@@ -1114,6 +1137,9 @@ body {
   }
   .faq {
     padding-bottom: 15px;
+  }
+  .faq__text {
+    font-size: 12px;
   }
   .faq__list {
     margin-top: 16px;

@@ -37,3 +37,9 @@ let slider = document.querySelector('.slider-container');
 // window.addEventListener('resize', () => {
 //   mobilePagination();
 // });
+
+const burgerButton = document.querySelector('.header__burger');
+const navMenu = document.querySelector('.navigation__list');
+burgerButton.addEventListener('click', function() {
+  navMenu.classList.toggle('navigation__burger');
+})
