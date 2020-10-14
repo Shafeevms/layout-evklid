@@ -734,19 +734,27 @@ body {
 }
 
 @media(max-width: 1024px) {
+  .navigation__list {
+    position: absolute;
+    left: -9999px;
+    transition: left 0.4s ease;
+  }
   .navigation__burger {
+    display: flex;
     position: fixed;
     flex-direction: column;
-    padding: 20px 0;
+    padding: 200px 0;
     align-items: center;
     top: 0;
     left: 0;
-    background-color: #FF9900;
+    background: rgb(219,139,18);
+    background: radial-gradient(circle, rgba(219,139,18,1) 9%, rgba(255,166,0,1) 49%, rgba(218,138,17,1) 95%);
     height: 100%;
     width: 100%;
     z-index: 100;
   }
-  .navigation__list {
+  .navigation__link {
+    font-size: 24px;
   }
   .navigation__item,
   .navigation__item:not(:first-child) {
