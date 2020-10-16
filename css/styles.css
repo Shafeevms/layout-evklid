@@ -791,7 +791,7 @@ body {
     padding: 26px 38px;
   }
   .checkbox {
-    display: flex;
+    /* display: flex; */
   }
   .title {
     font-weight: 400;
