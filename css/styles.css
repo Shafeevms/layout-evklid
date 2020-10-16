@@ -441,7 +441,7 @@ body {
   padding-bottom: 96px;
 }
 .faq__text {
-  line-height: 15px;
+  line-height: 26px;
   overflow-y: auto;
 }
 
@@ -657,7 +657,7 @@ body {
     line-height: 73px;
   }
   .hero__text {
-    margin-bottom: 110px;
+    margin-bottom: 45px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -773,7 +773,7 @@ body {
     padding-bottom: 12px;
   }
   .hero__content {
-    margin-bottom: 61px;
+    /* margin-bottom: 61px; */
     padding: 162px 45px 31px 45px;
   }
   .hero__title {
@@ -787,7 +787,7 @@ body {
     display: inline-block;
   }
   .hero__button {
-    margin-bottom: 69px;
+    /* margin-bottom: 69px; */
     padding: 26px 38px;
   }
   .checkbox {
