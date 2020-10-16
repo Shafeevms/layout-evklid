@@ -13,8 +13,8 @@ let mySwiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
-    dynamicBullets: true,
-    dynamicMainBullets: 1,
+    bulletClass: 'checkbox__label',
+    bulletActiveClass: 'checkbox__label-checked'
   },
 });
 
