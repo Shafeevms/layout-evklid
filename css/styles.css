@@ -195,7 +195,10 @@ body {
 .swiper-slide {
   z-index: 1;
 }
-
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
 .hero__title {
   max-width: 1100px;
   margin-bottom: 18px;
@@ -1227,6 +1230,9 @@ body {
     width: 100%;
     background-color: #FF9900;
   }
-
+  .checkbox__label {
+    width: 10px;
+    height: 10px;
+  }
 }
 
