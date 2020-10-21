@@ -740,21 +740,24 @@ body {
   .navigation__list {
     position: absolute;
     left: -9999px;
-    transition: left 0.4s ease;
-  }
-  .navigation__burger {
+    bottom: 0;
     display: flex;
     position: fixed;
     flex-direction: column;
     padding: 200px 0;
     align-items: center;
-    top: 0;
-    left: 0;
     background: rgb(219,139,18);
     background: radial-gradient(circle, rgba(219,139,18,1) 9%, rgba(255,166,0,1) 49%, rgba(218,138,17,1) 95%);
     height: 100%;
     width: 100%;
     z-index: 100;
+    transition: left 0.4s ease;
+
+  }
+  .navigation__list-mobile {
+
+    top: 0;
+    left: 0;
   }
   .navigation__link {
     font-size: 24px;

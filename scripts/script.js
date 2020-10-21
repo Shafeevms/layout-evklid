@@ -24,10 +24,10 @@ const burgerBtn = document.querySelector('.header__burger');
 const targetElement = document.querySelector('.navigation__list');
 
 burgerBtn.addEventListener('click', function() {
-  targetElement.classList.toggle('navigation__burger');
-  bodyScrollLock.disableBodyScroll(targetElement);
-  if (targetElement.className === 'navigation__list') {
-    bodyScrollLock.enableBodyScroll(targetElement);
-  }
+  targetElement.classList.toggle('navigation__list-mobile');
+
+  targetElement.classList.contains('navigation__list-mobile')
+  ? bodyScrollLock.disableBodyScroll(targetElement)
+  : bodyScrollLock.enableBodyScroll(targetElement)
 })
 
