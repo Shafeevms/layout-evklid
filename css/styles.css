@@ -121,20 +121,28 @@ body {
   display: block;
   position: relative;
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: black;
 }
 
 .firstline {
-  top: -5px;
+  top: -8px;
+  transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.rotateR {
+  transform: rotate(-45deg) translate(-7px, 7px);
+}
+.rotateL {
+  transform: rotate(45deg) translate(-7px, -7px);
 }
 
 .secondline {
-  top: 2px;
+  /* top: -2px; */
 }
 
 .thirdline {
-  top: 9px;
+  top: 8px;
+  transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .checkbox {
@@ -638,7 +646,9 @@ body {
   transform: rotate(360deg);
 }
 
-.d-none {}
+.d-none {
+  display: none;
+}
 
 .footer__sociallist-tablet {
   display: none;
@@ -997,6 +1007,9 @@ body {
   .footer__rightside {
     padding-right: 0;
   }
+  .header__burger {
+    transform: translate(-15px, 5px);
+  }
 }
 
 
@@ -1236,6 +1249,12 @@ body {
   .checkbox__label {
     width: 10px;
     height: 10px;
+  }
+  .rotateR {
+    transform: rotate(-45deg) translate(-7px, 4px);
+  }
+  .rotateL {
+    transform: rotate(45deg) translate(-7px, -4px);
   }
 }
 

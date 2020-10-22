@@ -29,5 +29,10 @@ burgerBtn.addEventListener('click', function() {
   targetElement.classList.contains('navigation__list-mobile')
   ? bodyScrollLock.disableBodyScroll(targetElement)
   : bodyScrollLock.enableBodyScroll(targetElement)
+
+  burgerBtn.querySelector('.secondline').classList.toggle('d-none');
+  burgerBtn.querySelector('.firstline').classList.toggle('rotateR');
+  burgerBtn.querySelector('.thirdline').classList.toggle('rotateL');
+
 })
 
