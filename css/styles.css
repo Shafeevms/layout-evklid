@@ -7,10 +7,13 @@ ul, h1, h2, h3, p, img, button {
   padding: 0;
 }
 
-a {
+a, button {
   text-decoration: none;
+  outline: none;
 }
-
+input, textarea {
+  border: none;
+}
 ul {
   list-style: none;
 }
@@ -463,6 +466,7 @@ body {
 .faq__list {}
 
 .faq__item {
+  padding-bottom: 20px;
   border-top: 1px solid #e5e5e5;
 }
 
